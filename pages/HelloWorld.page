@@ -1,0 +1,23 @@
+<apex:page title="User Status">
+       <h1>This is my first page</h1> 
+    <apex:pageBlock title="A Block Title" >
+        <apex:pageBlockSection title="Page block section 1" columns="1">       
+            Hi First Section.  <br/>
+            {! $User.FirstName & ' ' & $User.LastName} <br/><br/>
+             {! if($User.isActive ,"User is Active: " & $User.UserName,"InActive User")}
+         </apex:pageBlockSection>
+        <apex:pageBlockSection title="Page block section 2">       
+            Hi Second Section. <br/>
+            Today function value :{! today()}
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+     <p>The year today is {! YEAR(TODAY()) }</p>
+    <p>Tomorrow will be day number  {! DAY(TODAY() + 1) }</p>
+    <p>Let's find a maximum: {! MAX(1,2,3,4,5,6,5,4,3,2,1) } </p>
+	<p>The square root of 49 is {! if(SQRT(49) = 7 , 'Trrrue' , 'False') }</p>
+	<p>Is it true?  {! CONTAINS('salesforce.com', 'force.com') }</p>
+    
+    <p>{! IF( CONTAINS('salesforce.com','force.com'), 'Yep', 'Nope') }</p>
+	 
+
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page standardController="Account" extensions="Acct_Cnt_Ext_1">
+   {!greeting} <p/>
+    <apex:form >
+        <apex:inputField value="{!account.name}"/> <p/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    
+    <apex:pageBlock rendered="{! $ObjectType.Account.Accessible}">
+        <apex:pageBlockTable value="{!opportunities}" var="o">
+            <apex:column value="{!o.Name}"/>
+            <apex:column value="{!o.CloseDate}"/>
+            <apex:column value="{!o.StageName}"/>
+        </apex:pageBlockTable>
+   </apex:pageBlock>
+</apex:form>
+</apex:page>

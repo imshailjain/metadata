@@ -1,0 +1,8 @@
+<apex:page standardController="Property__c">
+     <apex:pageBlock title="Property Summary">
+        <apex:pageBlockSection >
+            Name: {! Property__c.Name}<br/>
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

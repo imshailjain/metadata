@@ -1,0 +1,9 @@
+<apex:page controller="cCDMA_PASSPARAM_1_1">
+    <apex:pageBlock >
+        <apex:pageblockTable value="{!LstParameters}" var="a"> 
+            <apex:column headerValue="Parameter Values" value="{!a}"/>        
+        
+        </apex:pageblockTable>   
+    </apex:pageBlock>
+
+  </apex:page>
