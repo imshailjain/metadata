@@ -20,7 +20,4 @@ public class trg_Account1 {
         insert cntNewData;
     }
 
-     public static void Act_AfterUpdate(list<Account> actUpdateData){ 
-         
-     }
 }
